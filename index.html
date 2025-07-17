@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rps(2).css">
+</head>
+<body>
+
+    <header>
+        <marquee direction="left">Rock Paper Scissors</marquee>
+    </header>
+
+    <div class="modal" id="roundModal">
+        <div class="modal-content">
+            <H3>How many rounds do you want to play?</H3>
+            <input type="number" id="roundInput" min="1" placeholder="Enter rounds"/>
+            <button onclick="startGame()">startGame</button>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="user-turn">
+            <div class="pick">
+                <img src="rock.png">
+            </div>
+            <h1>YOU</h1>
+        </div>
+        <div class="comp-turn">
+            <div class="pick">
+                <img src="paper.png">
+            </div>
+            <h1>COMP</h1>
+        </div>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="rock">ROCK</div>
+        <div class="choice" id="paper">PAPER</div>
+        <div class="choice" id="scissors">SCISSORS</div>
+    </div>
+
+    <div class="footer">
+        <p id="msg">Play your move</p>
+    </div>
+
+    <div class="scoreboard">
+        <div class="score">
+            <p id="user-score">0</p>
+            <h4>You</h4>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <h4>comp</h4>
+        </div>
+    </div>
+
+    <div class="modal" id="Final">
+        <div class="modal-content">
+            <H3 class="FinalMsg"></H3>
+            <button onclick="Re()">Re-start Game</button>
+            <button onclick="exit()">Exit</button>
+        </div>
+    </div>
+   
+    <script src="rps(2).js"></script>
+</body>
+</html>

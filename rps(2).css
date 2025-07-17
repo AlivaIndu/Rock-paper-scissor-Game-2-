@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*body{
+    background-color:rgb(4, 51, 49);
+}
+*/
+header{
+    background-color: palevioletred;
+    color: white;
+    height: 8vh;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.pick{
+
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+}
+
+.choice:hover{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+
+.choice:active{
+    background-color: rgb(204, 224, 20);
+}
+
+.user-turn,.comp-turn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 2rem;
+}
+
+#user-score,#comp-score{
+    font-size: 4rem;
+}
+.footer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.footer:hover{
+    cursor: pointer;
+}
+#msg{
+    background-color: palevioletred;
+    color: white;
+    padding: 1rem 2rem 1rem 2rem;
+    display: inline;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.choice{
+    font-size: 1.5rem;
+    padding: 1rem;
+    display: inline;
+    border: 1px solid palevioletred;
+    border-radius: 1rem;
+}
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+.modal-content h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.modal-content input {
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 150px;
+}
+
+.modal-content button {
+  margin-top: 15px;
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: pink;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
